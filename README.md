@@ -23,6 +23,7 @@ git clone https://github.com/anirudh-hegde/pulselang.git
 cd pulselang
 ```
 
+* Run the app
 ```sh
 streamlit run welcome_👋️.py 
 ```
