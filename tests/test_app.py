@@ -10,5 +10,5 @@ def test_app_error():
     assert os.path.isfile(app_script_path),f"File not found at {app_script_path}"
     at = AppTest.from_file(app_script_path)
     # at.button[0].click().run()
-    st.sidebar[0].success().run()
+    at.sidebar[0].success().run()
     at.run()
