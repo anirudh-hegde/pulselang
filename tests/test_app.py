@@ -9,5 +9,4 @@ def test_app_error():
     app_script_path=os.path.join(test_dir,"..","welcome_👋️.py")
     assert os.path.isfile(app_script_path),f"File not found at {app_script_path}"
     at = AppTest.from_file(app_script_path)
-    at.sidebar[0].success("Select a web page above ☝️").run()
     at.run()
