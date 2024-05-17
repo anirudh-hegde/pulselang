@@ -37,14 +37,13 @@ Languages = {
 }
 
 translator = GoogleTranslator()
-# original_title = '<p style="font-family:Courier; color:Blue; font-size: 20px;">PulseLang - Translate your text</p>'
+
 st.title("PulseLang")
 
 text = st.text_area("Enter the text", height=None, max_chars=None, key=None, help="Enter your text here")
 lang_list=list(Languages.keys())
 input_language = st.selectbox('Source language', lang_list, index=lang_list.index('english'))
 output_language = st.selectbox('Target language', lang_list, index=lang_list.index('german'))
-# output_language = st.selectbox('Target language', list(Languages.keys()), index=list(Languages.keys()).index('kannada'))
 
 source_lang = Languages[input_language]
 target_lang = Languages[output_language]
