@@ -1,5 +1,6 @@
-import streamlit as st
 from deep_translator import GoogleTranslator
+import streamlit as st
+
 st.set_page_config(page_icon='translator-icon.png', layout='wide', initial_sidebar_state='expanded')
 
 st.markdown(
@@ -32,7 +33,8 @@ Languages = {
     'russian': 'ru', 'samoan': 'sm', 'scots gaelic': 'gd', 'serbian': 'sr', 'sesotho': 'st', 'shona': 'sn',
     'sindhi': 'sd', 'sinhala': 'si', 'slovak': 'sk', 'slovenian': 'sl', 'somali': 'so', 'spanish': 'es',
     'sundanese': 'su', 'swahili': 'sw', 'swedish': 'sv', 'tajik': 'tg', 'tamil': 'ta', 'telugu': 'te', 'thai': 'th',
-    'turkish': 'tr', 'turkmen': 'tk', 'ukrainian': 'uk', 'urdu': 'ur', 'uyghur': 'ug', 'uzbek': 'uz', 'vietnamese': 'vi',
+    'turkish': 'tr', 'turkmen': 'tk', 'ukrainian': 'uk', 'urdu': 'ur', 'uyghur': 'ug', 'uzbek': 'uz',
+    'vietnamese': 'vi',
     'welsh': 'cy', 'xhosa': 'xh', 'yiddish': 'yi', 'yoruba': 'yo', 'zulu': 'zu'
 }
 
@@ -41,7 +43,7 @@ translator = GoogleTranslator()
 st.title("PulseLang")
 
 text = st.text_area("Enter the text", height=None, max_chars=None, key=None, help="Enter your text here")
-lang_list=list(Languages.keys())
+lang_list = list(Languages.keys())
 input_language = st.selectbox('Source language', lang_list, index=lang_list.index('english'))
 output_language = st.selectbox('Target language', lang_list, index=lang_list.index('german'))
 
