@@ -26,9 +26,14 @@ git clone https://github.com/anirudh-hegde/pulselang.git
 cd pulselang
 ```
 
-* Run the app
+* Run the app using streamlit
 ```sh
 streamlit run welcome_👋️.py 
+```
+
+* Run the app using docker
+```
+docker run anirudh06/langrans
 ```
 
 ## Conclusion
