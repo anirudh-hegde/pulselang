@@ -30,7 +30,7 @@ def main():
         local communities, and access accurate information.
         
         ### Want to know about project's gitHub repository?
-        - Check out [PulseLang](https://github.com/pulselang)
+        - Check out [PulseLang](https://github.com/anirudh-hegde/pulselang)
     
     """
     )
